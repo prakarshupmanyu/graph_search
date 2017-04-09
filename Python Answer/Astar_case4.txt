@@ -1,0 +1,16 @@
+A*
+A
+E
+6
+A B 3
+A C 2
+B C 1
+C D 4
+B D 2
+D E 6
+5
+A 10
+B 9
+C 8
+D 5
+E 0

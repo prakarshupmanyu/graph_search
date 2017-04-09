@@ -1,0 +1,23 @@
+DFS
+A
+H
+9
+A B 2
+A C 23
+A D 43
+C H 1
+B E 1
+E G 34
+E H 21
+C I 8
+D F 90
+9
+A 1
+B 2
+C 3
+D 4
+E 5
+F 4
+G 2
+H 2
+I 1

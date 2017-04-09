@@ -1,0 +1,12 @@
+BFS
+C
+A
+4
+A B 1
+A C 12
+B A 10
+C A 3
+3
+A 1
+B 2
+C 3

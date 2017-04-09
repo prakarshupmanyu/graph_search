@@ -1,0 +1,19 @@
+DFS
+A
+D
+8
+A B 2
+A C 3
+A G 4
+G D 1
+B E 2
+E D 3
+B G 2
+C G 1
+6
+A 2
+B 2
+C 2
+D 0
+G 4
+E 2

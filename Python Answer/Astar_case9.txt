@@ -1,0 +1,17 @@
+A*
+A
+E
+7
+A B 1
+A C 3
+B C 1
+C D 3
+C E 8
+B D 4
+D E 6
+5
+A 10
+B 3
+C 2
+D 1
+E 0

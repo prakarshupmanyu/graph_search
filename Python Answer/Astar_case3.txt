@@ -1,0 +1,17 @@
+A*
+A
+F
+6
+A B 1
+A C 2
+B D 4
+C E 3
+D F 5
+E F 5
+6
+A 10
+B 8
+C 6
+D 5
+E 5
+F 0
