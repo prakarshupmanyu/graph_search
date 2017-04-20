@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import sys
 
+#Function to read the input file. Input file is should be in the format as defined in the problem statement.
 def readInputFile(fileName):
 	file = open(fileName, 'r')
 	returnVal = {}
@@ -33,6 +34,7 @@ def readInputFile(fileName):
 	file.close()
 	return returnVal
 
+#This is only for cases other than A* because then the heuristic Sunday distances have no impact. Changing them to zero here so that we can have a genric code based addition later in the code for all algorithms
 def changeSundayTrafficToZero(fileData):
 	for key in fileData['sundayLines']:
 		fileData['sundayLines'][key] = 0
@@ -168,7 +170,8 @@ def getDFSOutput(inputData):
 				enQueue = childrenToAdd + enQueue
 		pathQueue.append(city)
 		print "PathQueue is : "+str(pathQueue)
-					
+
+#This algorithm is similar to A*. The only difference is that in A* we use heuristic values as well. So, for UCS we changed to heuristic values to zero above which makes this function reusable for A*.					
 def getUCSOutput(inputData):
 	print "I am here : getUCSOutput"
 	enQueue = [{inputData['startState']:[0,'']}]	#open queue
@@ -218,7 +221,7 @@ def getAStarOutput(inputData):
 	return getUCSOutput(inputData)
 
 def main():
-	#Flow starts here
+	#Program starts here. Input file should be in the same directory as homework.py (this file)
 	fileData = readInputFile("input.txt")
 
 	if fileData['algorithm'] != 'A*':
